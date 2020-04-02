@@ -1,28 +1,27 @@
 const Logger = require('./modules/logger');
+const Utils = require('./modules/utils.js');
+const Main = require('./modules/main.js');
 const Database = require('./modules/database');
 const WarcraftLogs = require('./modules/warcraftlogs');
 
-try {
+const Express = require('express');
+const App = Express();
+const Path = require('path');
 
-  const Express = require('express');
-  const App = Express();
-  const Path = require('path');
+const Settings = require('./config/settings');
 
-  const Settings = require('./config/settings');
+Logger.printInitInfo();
+Database.connect();
 
-  Logger.printInitInfo();
-  Database.connect();
+App.get('/', (req, res) => {
+  res.sendFile(Path.resolve('public/views/index.html'));
+  Logger.log(`${Utils.parseIp(req.ip)} requested /`);
+});
 
-  //WarcraftLogs.requestCharacterGear('Basati', 'Mograine', 'eu');
+App.get('/characters/:name', async (req, res) => {
+  Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
+  res.send(await WarcraftLogs.requestCharacterGear(req.params.name, 'Mograine', 'eu'));
+});
 
-  App.get('/', (req, res) => {
-    res.sendFile(Path.resolve('public/views/index.html'));
-    Logger.log('User connected to webview');
-  });
-
-  App.use(Express.static('public'));
-
-  App.listen(Settings.port || 3000);
-} catch (e) {
-  Logger.error(e);
-}
+App.use(Express.static('public'));
+App.listen(Settings.port || 3000);
