@@ -1,0 +1,12 @@
+{
+  "port": 3000,
+  "log": {
+    "path": "./log.txt",
+    "maxSize": "30m",
+    "sizeCheckInterval": "1h",
+    "maxStoredFiles": 10
+  },
+  "warcraftLogsKey": "",
+  "blizzardClientID": "",
+  "blizzardClientSecret": ""
+}

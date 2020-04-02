@@ -1,0 +1,909 @@
+
+[1/4/2020 11:36:02 PM] [[31mERROR[39m] Error: Cannot find module 'express'
+Require stack:
+- D:\Documents\code\wowclassic\app.js
+[1/4/2020 11:37:45 PM] [[31mERROR[39m] Error: Cannot find module 'express'
+Require stack:
+- D:\Documents\code\wowclassic\app.js
+[1/4/2020 11:38:02 PM] [[31mERROR[39m] Error: Cannot find module 'express'
+Require stack:
+- D:\Documents\code\wowclassic\app.js
+[1/4/2020 11:40:45 PM] [[31mERROR[39m] Error: Cannot find module 'socket.io'
+Require stack:
+- D:\Documents\code\wowclassic\app.js
+[1/4/2020 11:40:59 PM] [[32mINFO[39m] 
+
+
+[1/4/2020 11:40:59 PM] [[32mINFO[39m] ------------------------------
+[1/4/2020 11:40:59 PM] [[32mINFO[39m] ---------- WoW Armory Classic ----------
+[1/4/2020 11:40:59 PM] [[32mINFO[39m] ------------------------------
+
+[1/4/2020 11:40:59 PM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[1/4/2020 11:41:43 PM] [[32mINFO[39m] 
+
+
+[1/4/2020 11:41:43 PM] [[32mINFO[39m] ------------------------------
+[1/4/2020 11:41:43 PM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[1/4/2020 11:41:43 PM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[1/4/2020 11:41:43 PM] [[32mINFO[39m] ------------------------------
+
+[1/4/2020 11:48:51 PM] [[32mINFO[39m] 
+
+
+[1/4/2020 11:48:51 PM] [[32mINFO[39m] ------------------------------
+[1/4/2020 11:48:51 PM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[1/4/2020 11:48:51 PM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[1/4/2020 11:48:51 PM] [[32mINFO[39m] ------------------------------
+
+[1/4/2020 11:49:33 PM] [[32mINFO[39m] 
+
+
+[1/4/2020 11:49:33 PM] [[32mINFO[39m] ------------------------------
+[1/4/2020 11:49:33 PM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[1/4/2020 11:49:33 PM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[1/4/2020 11:49:33 PM] [[32mINFO[39m] ------------------------------
+
+[1/4/2020 11:49:38 PM] [[32mINFO[39m] Front connected!
+[1/4/2020 11:53:10 PM] [[32mINFO[39m] 
+
+
+[1/4/2020 11:53:10 PM] [[32mINFO[39m] ------------------------------
+[1/4/2020 11:53:10 PM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[1/4/2020 11:53:10 PM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[1/4/2020 11:53:10 PM] [[32mINFO[39m] ------------------------------
+
+[1/4/2020 11:53:12 PM] [[32mINFO[39m] Front connected!
+[1/4/2020 11:53:31 PM] [[32mINFO[39m] 
+
+
+[1/4/2020 11:53:31 PM] [[32mINFO[39m] ------------------------------
+[1/4/2020 11:53:31 PM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[1/4/2020 11:53:31 PM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[1/4/2020 11:53:31 PM] [[32mINFO[39m] ------------------------------
+
+[1/4/2020 11:56:57 PM] [[32mINFO[39m] 
+
+
+[1/4/2020 11:56:57 PM] [[32mINFO[39m] ------------------------------
+[1/4/2020 11:56:57 PM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[1/4/2020 11:56:57 PM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[1/4/2020 11:56:57 PM] [[32mINFO[39m] ------------------------------
+
+[1/4/2020 11:56:58 PM] [[32mINFO[39m] ::ffff:127.0.0.1 connected to webview
+[1/4/2020 11:57:33 PM] [[32mINFO[39m] 
+
+
+[1/4/2020 11:57:33 PM] [[32mINFO[39m] ------------------------------
+[1/4/2020 11:57:33 PM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[1/4/2020 11:57:33 PM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[1/4/2020 11:57:33 PM] [[32mINFO[39m] ------------------------------
+
+[1/4/2020 11:57:40 PM] [[32mINFO[39m] ::1 connected to webview
+[1/4/2020 11:59:18 PM] [[32mINFO[39m] ::ffff:77.231.134.46 connected to webview
+[1/4/2020 11:59:55 PM] [[32mINFO[39m] 
+
+
+[1/4/2020 11:59:55 PM] [[32mINFO[39m] ------------------------------
+[1/4/2020 11:59:55 PM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[1/4/2020 11:59:55 PM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[1/4/2020 11:59:55 PM] [[32mINFO[39m] ------------------------------
+
+[1/4/2020 11:59:55 PM] [[32mINFO[39m] undefined connected to webview
+[1/4/2020 11:59:57 PM] [[32mINFO[39m] undefined connected to webview
+[2/4/2020 12:02:39 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 12:02:39 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 12:02:39 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 12:02:39 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 12:02:39 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 12:03:00 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 12:03:00 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 12:03:00 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 12:03:00 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 12:03:00 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 12:07:01 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 12:07:01 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 12:07:01 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 12:07:01 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 12:07:01 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 12:07:06 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 12:55:48 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 12:55:48 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 12:55:48 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 12:55:48 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 12:55:48 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 12:55:48 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 12:55:48 AM] [[31mERROR[39m] MongoNetworkError: failed to connect to server [192.168.103:27017] on first connect [Error: getaddrinfo ENOTFOUND 192.168.103
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:64:26) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+[2/4/2020 12:56:38 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 12:56:38 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 12:56:38 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 12:56:38 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 12:56:38 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 12:56:39 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 12:56:41 AM] [[31mERROR[39m] MongoNetworkError: failed to connect to server [192.168.1.103:27017] on first connect [Error: connect ECONNREFUSED 192.168.1.103:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+[2/4/2020 1:01:16 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 1:01:16 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 1:01:16 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 1:01:16 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 1:01:16 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 1:01:16 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 1:01:18 AM] [[31mERROR[39m] MongoNetworkError: failed to connect to server [192.168.1.103:27017] on first connect [Error: connect ECONNREFUSED 192.168.1.103:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+[2/4/2020 1:01:55 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 1:01:55 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 1:01:55 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 1:01:55 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 1:01:55 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 1:01:56 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 1:01:58 AM] [[31mERROR[39m] MongoNetworkError: failed to connect to server [192.168.1.103:27017] on first connect [Error: connect ECONNREFUSED 192.168.1.103:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+[2/4/2020 1:03:24 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 1:03:24 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 1:03:24 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 1:03:24 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 1:03:24 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 1:03:25 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 1:03:27 AM] [[31mERROR[39m] MongoNetworkError: failed to connect to server [192.168.1.103:27017] on first connect [Error: connect ECONNREFUSED 192.168.1.103:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+[2/4/2020 1:06:20 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 1:06:20 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 1:06:20 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 1:06:20 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 1:06:20 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 1:06:21 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 1:06:21 AM] [[31mERROR[39m] MongoNetworkError: failed to connect to server [192.168.1.103:27017] on first connect [MongoError: Server at 192.168.1.103:27017 reports maximum wire version 0, but this version of the Node.js Driver requires at least 2 (MongoDB 2.6)
+    at checkSupportedServer (d:\Documents\code\wowclassic\node_modules\mongodb\lib\core\connection\connect.js:89:10)
+    at d:\Documents\code\wowclassic\node_modules\mongodb\lib\core\connection\connect.js:133:32
+    at _callback (d:\Documents\code\wowclassic\node_modules\mongodb\lib\core\connection\connect.js:349:5)
+    at Connection.messageHandler (d:\Documents\code\wowclassic\node_modules\mongodb\lib\core\connection\connect.js:378:5)
+    at Connection.emit (events.js:311:20)
+    at processMessage (d:\Documents\code\wowclassic\node_modules\mongodb\lib\core\connection\connection.js:384:10)
+    at Socket.<anonymous> (d:\Documents\code\wowclassic\node_modules\mongodb\lib\core\connection\connection.js:553:15)
+    at Socket.emit (events.js:311:20)
+    at addChunk (_stream_readable.js:294:12)
+    at readableAddChunk (_stream_readable.js:275:11) {
+  name: 'MongoError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+[2/4/2020 1:28:18 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 1:28:18 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 1:28:18 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 1:28:18 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 1:28:18 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 1:28:18 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 1:28:20 AM] [[31mERROR[39m] MongoNetworkError: failed to connect to server [192.168.1.103:27017] on first connect [Error: connect ECONNREFUSED 192.168.1.103:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+[2/4/2020 1:28:59 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 1:28:59 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 1:28:59 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 1:28:59 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 1:28:59 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 1:28:59 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 1:29:01 AM] [[31mERROR[39m] MongoNetworkError: failed to connect to server [192.168.1.103:27017] on first connect [Error: connect ECONNREFUSED 192.168.1.103:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+[2/4/2020 1:29:07 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 1:29:07 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 1:29:07 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 1:29:07 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 1:29:07 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 1:29:07 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 1:29:09 AM] [[31mERROR[39m] MongoNetworkError: failed to connect to server [192.168.1.103:27017] on first connect [Error: connect ECONNREFUSED 192.168.1.103:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+[2/4/2020 1:32:24 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 1:32:24 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 1:32:24 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 1:32:24 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 1:32:24 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 1:32:24 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 1:32:24 AM] [[31mERROR[39m] MongoParseError: Unescaped at-sign in authority section
+[2/4/2020 1:33:57 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 1:33:57 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 1:33:57 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 1:33:57 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 1:33:57 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 1:33:58 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 1:33:58 AM] [[31mERROR[39m] MongoParseError: Unescaped at-sign in authority section
+[2/4/2020 1:49:35 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 1:49:35 AM] [[31mERROR[39m] MongoParseError: Unescaped at-sign in authority section
+[2/4/2020 2:07:55 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 2:07:55 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 2:07:55 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 2:07:55 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 2:07:55 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 2:07:55 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 2:07:55 AM] [[31mERROR[39m] MongoParseError: Unescaped at-sign in authority section
+[2/4/2020 2:08:06 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 2:08:06 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 2:08:06 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 2:08:06 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 2:08:06 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 2:08:06 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 2:08:06 AM] [[31mERROR[39m] MongoParseError: Unescaped at-sign in authority section
+[2/4/2020 2:08:28 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 2:08:28 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 2:08:28 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 2:08:28 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 2:08:28 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 2:08:28 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 2:08:30 AM] [[31mERROR[39m] MongoNetworkError: failed to connect to server [192.168.1.103:27017] on first connect [Error: connect ECONNREFUSED 192.168.1.103:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+[2/4/2020 2:09:42 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 2:09:42 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 2:09:42 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 2:09:42 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 2:09:42 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 2:09:42 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 2:09:44 AM] [[31mERROR[39m] MongoNetworkError: failed to connect to server [192.168.1.103:27017] on first connect [Error: connect ECONNREFUSED 192.168.1.103:27017
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1137:16) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+[2/4/2020 2:11:25 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 2:11:25 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 2:11:25 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 2:11:25 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 2:11:25 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 2:11:25 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 2:11:25 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 2:19:47 AM] [[31mERROR[39m] TypeError: Database.connect is not a function
+[2/4/2020 2:20:48 AM] [[31mERROR[39m] TypeError: Database.connect is not a function
+[2/4/2020 2:21:58 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 2:21:58 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 2:21:58 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 2:21:58 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 2:21:58 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 2:21:58 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 2:21:59 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 2:28:04 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 2:28:04 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 2:28:04 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 2:28:04 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 2:28:04 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 2:28:04 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 2:28:11 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 2:30:56 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 2:30:56 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 2:30:56 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 2:30:56 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 2:30:56 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 2:30:56 AM] [[31mERROR[39m] TypeError: Database.connect is not a function
+[2/4/2020 2:37:10 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 2:37:10 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 2:37:10 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 2:37:10 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 2:37:10 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 2:37:10 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 2:37:16 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:08:34 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:08:34 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:08:34 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:08:34 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:08:34 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:08:35 AM] [[31mERROR[39m] ReferenceError: https is not defined
+[2/4/2020 3:08:35 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:09:51 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:09:51 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:09:51 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:09:51 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:09:51 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:09:52 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:11:00 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:11:00 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:11:00 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:11:00 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:11:00 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:11:00 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:11:00 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:11:08 AM] [[31mERROR[39m] Error: 401 - Invalid key specified.
+[2/4/2020 3:11:40 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:11:40 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:11:40 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:11:40 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:11:40 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:11:40 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:11:40 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:11:47 AM] [[31mERROR[39m] Error: 400 - Invalid character name/server/region specified.
+[2/4/2020 3:12:00 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:12:00 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:12:00 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:12:00 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:12:00 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:12:00 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:12:00 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:12:06 AM] [[31mERROR[39m] Error: 400 - Invalid character name/server/region specified.
+[2/4/2020 3:12:27 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:12:27 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:12:27 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:12:27 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:12:27 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:12:27 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:12:27 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:13:07 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:13:07 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:13:07 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:13:07 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:13:07 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:13:10 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:13:18 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:13:18 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:13:18 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:13:18 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:13:18 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:13:54 AM] [[31mERROR[39m] MongoNetworkError: failed to connect to server [192.168.1.103:27017] on first connect [MongoNetworkError: connection timed out
+    at connectionFailureError (d:\Documents\code\wowclassic\node_modules\mongodb\lib\core\connection\connect.js:406:14)
+    at Socket.<anonymous> (d:\Documents\code\wowclassic\node_modules\mongodb\lib\core\connection\connect.js:294:16)
+    at Object.onceWrapper (events.js:417:28)
+    at Socket.emit (events.js:311:20)
+    at Socket._onTimeout (net.js:478:8)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+[2/4/2020 3:15:54 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:15:54 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:15:54 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:15:54 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:15:54 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:15:58 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:15:59 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:18:13 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:18:13 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:18:13 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:18:13 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:18:13 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:18:27 AM] [[31mERROR[39m] MongoNetworkError: failed to connect to server [192.168.1.103:27017] on first connect [MongoNetworkError: connection timed out
+    at connectionFailureError (d:\Documents\code\wowclassic\node_modules\mongodb\lib\core\connection\connect.js:406:14)
+    at Socket.<anonymous> (d:\Documents\code\wowclassic\node_modules\mongodb\lib\core\connection\connect.js:294:16)
+    at Object.onceWrapper (events.js:417:28)
+    at Socket.emit (events.js:311:20)
+    at Socket._onTimeout (net.js:478:8)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7) {
+  name: 'MongoNetworkError',
+  [Symbol(mongoErrorContextSymbol)]: {}
+}]
+[2/4/2020 3:18:27 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:23:19 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:23:19 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:23:19 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:23:19 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:23:19 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:23:27 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:23:28 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:24:19 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:24:19 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:24:19 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:24:19 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:24:19 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:24:19 AM] [[32mINFO[39m] [object Promise]
+[2/4/2020 3:24:24 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:24:24 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:24:48 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:24:48 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:24:48 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:24:48 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:24:48 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:24:54 AM] [[32mINFO[39m] [object Promise]
+[2/4/2020 3:24:54 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:24:55 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:25:42 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:25:42 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:25:42 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:25:42 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:25:42 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:25:46 AM] [[32mINFO[39m] [object Promise]
+[2/4/2020 3:25:46 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:25:49 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:29:59 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:29:59 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:29:59 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:29:59 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:29:59 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:30:04 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:30:04 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:33:59 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:33:59 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:33:59 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:33:59 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:33:59 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:33:59 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:33:59 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:35:47 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:35:47 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:35:47 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:35:47 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:35:47 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:35:47 AM] [[31mERROR[39m] TypeError: WarcraftLogs.getPlayerGear is not a function
+[2/4/2020 3:35:47 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:39:20 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:39:20 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:39:20 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:39:20 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:39:20 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:39:26 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:41:32 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:41:32 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:41:32 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:41:32 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:41:32 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:41:32 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:42:15 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:42:15 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:42:15 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:42:15 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:42:15 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:42:15 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:42:43 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:42:43 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:42:43 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:42:43 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:42:43 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:42:43 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:42:57 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:42:57 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:42:57 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:42:57 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:42:57 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:42:57 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:43:58 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:43:58 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:43:58 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:43:58 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:43:58 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:43:58 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:43:58 AM] [[32mINFO[39m] User connected to webview
+[2/4/2020 3:51:55 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:51:55 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:51:55 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:51:55 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:51:55 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:51:55 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:52:12 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:52:12 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:52:12 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:52:12 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:52:12 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:52:12 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:53:02 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:53:02 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:53:02 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:53:02 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:53:02 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:53:02 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:54:53 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:54:53 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:54:53 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:54:53 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:54:53 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:54:53 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:56:23 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:56:23 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:56:23 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:56:23 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:56:23 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:56:23 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:56:35 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:56:35 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:56:35 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:56:35 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:56:35 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:56:35 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:57:08 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:57:08 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:57:08 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:57:08 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:57:08 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:57:08 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 3:57:45 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 3:57:45 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 3:57:45 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 3:57:45 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 3:57:45 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 3:57:45 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:00:01 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:00:01 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:00:01 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:00:01 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:00:01 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:00:01 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:00:30 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:00:30 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:00:30 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:00:30 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:00:30 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:00:30 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:01:06 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:01:06 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:01:06 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:01:06 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:01:06 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:01:06 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:01:41 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:01:41 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:01:41 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:01:41 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:01:41 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:01:41 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:01:55 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:01:55 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:01:55 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:01:55 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:01:55 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:01:56 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:09:47 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:09:47 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:09:47 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:09:47 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:09:47 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:09:47 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:17:09 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:17:09 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:17:09 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:17:09 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:17:09 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:17:09 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:17:22 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:17:22 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:17:22 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:17:22 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:17:22 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:17:22 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:17:58 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:17:58 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:17:58 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:17:58 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:17:58 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:17:58 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:18:30 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:18:30 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:18:30 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:18:30 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:18:30 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:18:30 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:18:43 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:18:43 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:18:43 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:18:43 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:18:43 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:18:43 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:19:01 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:19:01 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:19:01 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:19:01 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:19:01 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:19:01 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:34:06 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:34:06 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:34:06 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:34:06 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:34:06 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:34:06 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:34:44 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:34:44 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:34:44 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:34:44 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:34:44 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:34:44 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:35:35 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:35:35 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:35:35 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:35:35 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:35:35 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:35:35 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:37:07 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:37:07 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:37:07 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:37:07 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:37:07 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:37:07 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:39:24 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:39:24 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:39:24 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:39:24 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:39:24 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:39:24 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:40:05 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:40:05 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:40:05 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:40:05 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:40:05 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:40:05 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 4:40:29 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 4:40:29 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 4:40:29 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 4:40:29 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 4:40:29 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 4:40:29 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 10:53:59 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 10:53:59 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 10:53:59 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 10:53:59 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 10:53:59 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 10:53:59 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 10:55:55 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 10:55:55 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 10:55:55 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 10:55:55 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 10:55:55 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 10:55:56 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 10:57:03 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 10:57:03 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 10:57:03 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 10:57:03 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 10:57:03 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 10:57:03 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 10:57:28 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 10:57:28 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 10:57:28 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 10:57:28 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 10:57:28 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 10:57:28 AM] [[32mINFO[39m] DB Connected
+[2/4/2020 10:57:50 AM] [[32mINFO[39m] 
+
+
+[2/4/2020 10:57:50 AM] [[32mINFO[39m] ------------------------------
+[2/4/2020 10:57:50 AM] [[32mINFO[39m] ----- WoW Armory Classic -----
+[2/4/2020 10:57:50 AM] [[32mINFO[39m] ----------- v1.0.0 -----------
+[2/4/2020 10:57:50 AM] [[32mINFO[39m] ------------------------------
+
+[2/4/2020 10:57:50 AM] [[32mINFO[39m] DB Connected
