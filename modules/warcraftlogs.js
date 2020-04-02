@@ -34,6 +34,8 @@ async function request(path) {
       }
     };
 
+    Logger.log(`Request to ${options.path}`)
+
     const req = Https.request(options, function(res) {
       let parts = [];
       req.on('error', function(err) {
@@ -53,6 +55,7 @@ async function request(path) {
           reject();
         }
         else {
+          Logger.log(`Response from ${options.path}: ${res.statusCode}`)
           resolve(data);
         }
       });
