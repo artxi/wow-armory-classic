@@ -8,8 +8,8 @@ module.exports = {
   async requestCharacterGear(playerName, realmName, regionCode) {
     const parses = await this.getPlayerParses(playerName, realmName, regionCode);
 
-    const vaelastraszParses = parses.filter(p => p.encounterID === 611);
-    const lastParse = vaelastraszParses.sort((a, b) => {return b.startTime - a.startTime})[0];
+    const lastParse = parses.filter(p => p.encounterID === 611)
+      .sort((a, b) => b.startTime - a.startTime)[0];
 
     return lastParse.gear;
   },
