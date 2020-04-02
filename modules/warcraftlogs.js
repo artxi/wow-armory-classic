@@ -5,21 +5,11 @@ const Settings = require('../config/settings');
 
 module.exports = {
 
-  async requestCharacterGear(playerName, realmName, regionCode) {
-    const parses = await this.getPlayerParses(playerName, realmName, regionCode);
-
-    const lastParse = parses.filter(p => p.encounterID === 611)
-      .sort((a, b) => b.startTime - a.startTime)[0];
-
-    return lastParse.gear;
-  },
-
-  async getPlayerParses(playerName, realmName, regionCode) {
-    const path = `/parses/character/${playerName}/${realmName}/${regionCode}`;
+  async requestNewReport(reportId) {
+    const path = `/report/fights/${reportId}`;
 
     return request(path);
   }
-
 };
 
 async function request(path) {
@@ -34,7 +24,7 @@ async function request(path) {
       }
     };
 
-    Logger.log(`Request to ${options.path}`)
+    Logger.log(`Request to ${path}`)
 
     const req = Https.request(options, function(res) {
       let parts = [];
@@ -52,10 +42,10 @@ async function request(path) {
 
         if (res.statusCode < 200 || res.statusCode >= 300) {
           Logger.error(new Error(res.statusCode + ' - ' + data.error));
-          reject();
+          resolve(data.error);
         }
         else {
-          Logger.log(`Response from ${options.path}: ${res.statusCode}`)
+          Logger.log(`Response from ${path}: ${res.statusCode}`)
           resolve(data);
         }
       });
