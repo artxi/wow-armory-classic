@@ -14,6 +14,7 @@
   },
   "blizzardClient": {
     "id": "",
-    "secret":""
+    "secret": "",
+    "accessToken": ""
   }
 }

@@ -1,6 +1,6 @@
 const Logger = require('./logger');
-const WarcraftLogs = require('./warcraftlogs');
 const Database = require('./database');
+const WarcraftLogs = require('./warcraftlogs');
 
 module.exports = {
 

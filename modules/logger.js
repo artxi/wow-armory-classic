@@ -39,7 +39,7 @@ function log(level, message) {
     case 'info':
       color = 'green';
       break;
-    case 'warning':
+    case 'warn':
       color = 'yellow';
       break;
     case 'error':
@@ -67,7 +67,7 @@ module.exports = {
     log('info', message);
   },
   warn: (message) => {
-    log('warning', message);
+    log('warn', message);
   },
   error: (message) => {
     log('error', message);

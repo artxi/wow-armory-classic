@@ -9,7 +9,7 @@ module.exports = {
 
   async httpGet(options) {
     return new Promise((resolve, reject) => {
-      Logger.log(`Request to ${options.path.substring(options.path.indexOf('?api'))}`);
+      Logger.log(`Request to ${options.path.substring(0, options.path.indexOf('?'))}`);
   
       const req = Https.request(options, res => {
         let parts = [];
@@ -29,7 +29,7 @@ module.exports = {
             Logger.error(`Error ${res.statusCode}: ${data.error}`);
             reject(data.error);
           } else {
-            Logger.log(`Response from ${options.path.substring(options.path.indexOf('?api'))}: ${res.statusCode}`);
+            Logger.log(`Response from ${options.path.substring(0, options.path.indexOf('?'))}: ${res.statusCode}`);
             resolve(data);
           }
         });
