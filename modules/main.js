@@ -4,25 +4,39 @@ const Database = require('./database');
 
 module.exports = {
 
+  /**
+   * User requests a new report
+   * @param {string} reportCode from the Warcraft Logs URL
+   */
   async parseNewReport(reportCode) {
     // Check if we have this report
-    const report = await Database.findOne('reports', {code: reportCode});
+    let report = await Database.findOne('reports', {code: reportCode});
 
-    // If not, request report from Warcraft Logs
+    // If not, request report to Warcraft Logs
     if (!report) {
-      await this.requestNewReport(reportCode);
+      report = await this.requestNewReport(reportCode);
     }
 
-    // Continue
+    // Return a summary so the user can choose a fight
+    return WarcraftLogs.getReportSummary(report);
   },
 
+  /**
+   * Request a report to Warcraft Logs API and save it to our database
+   * @param {string} reportCode from the Warcraft Logs URL
+   */
   async requestNewReport(reportCode) {
     const newReportData = await WarcraftLogs.requestReport(reportCode);
 
-    // Save report data to database
-    await Database.insertOne('reports', {
+    // Add the report code
+    const dataToSave = {
       code: reportCode,
       data: newReportData
-    });
+    };
+
+    await Database.insertOne('reports', dataToSave);
+
+    // We return this to display a summary
+    return dataToSave;
   }
 };
