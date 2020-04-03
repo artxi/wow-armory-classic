@@ -12,26 +12,22 @@ module.exports = {
       if (err) {
         Logger.error(err);
       } else {
-        Logger.log('DB Connected');
         Database = db.db('wow');
-
-        return Database;
+        Logger.log('Connected to database');
       }
     });
   },
 
   async findOne(collection, query) {
-    const data = await Database.collection(collection).findOne(query);
+    const result = await Database.collection(collection).findOne(query);
     Logger.log(`DB find: ${collection} ${JSON.stringify(query)}`)
 
-    return data;
+    return result;
   },
 
   async insertOne(collection, query) {
-    const data = await Database.collection(collection).insertOne(query);
-    Logger.log(`DB insert: ${collection} ${data.insertedId.toString()}`);
-
-    return data;
+    const result = await Database.collection(collection).insertOne(query);
+    Logger.log(`DB insert: ${collection} ${result.insertedId.toString()}`);
   },
 
   disconnect() {

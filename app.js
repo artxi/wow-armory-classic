@@ -21,7 +21,7 @@ App.get('/', (req, res) => {
 App.get('/reports/new/:id', async (req, res) => {
   try {
     Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
-    res.send(await Main.parseNewReport(res, req.params.id));
+    res.send(await Main.parseNewReport(req.params.id));
   } catch (err) {
     res.status(400).send(err.message);
   }

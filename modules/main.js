@@ -4,23 +4,25 @@ const Database = require('./database');
 
 module.exports = {
 
-  async parseNewReport(res, reportCode) {
+  async parseNewReport(reportCode) {
     // Check if we have this report
-    const reportExists = await Database.findOne('reports', {code: reportCode});
+    const report = await Database.findOne('reports', {code: reportCode});
 
-    if (reportExists) {
-      throw new Error('This report is already in our database');
+    // If not, request report from Warcraft Logs
+    if (!report) {
+      await this.requestNewReport(reportCode);
     }
 
-    // If not, retrieve data from Warcraft Logs
-    const newReportData = await WarcraftLogs.requestNewReport(reportCode);
+    // Continue
+  },
+
+  async requestNewReport(reportCode) {
+    const newReportData = await WarcraftLogs.requestReport(reportCode);
 
     // Save report data to database
     await Database.insertOne('reports', {
       code: reportCode,
       data: newReportData
     });
-
-    return 'OK';
   }
 };

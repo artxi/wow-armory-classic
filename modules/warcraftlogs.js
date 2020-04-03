@@ -5,7 +5,7 @@ const Settings = require('../config/settings');
 
 module.exports = {
 
-  async requestNewReport(reportId) {
+  async requestReport(reportId) {
     const path = `/report/fights/${reportId}`;
 
     return request(path);
