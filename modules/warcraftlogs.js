@@ -41,10 +41,9 @@ async function request(path) {
         data = JSON.parse(data);
 
         if (res.statusCode < 200 || res.statusCode >= 300) {
-          Logger.error(new Error(res.statusCode + ' - ' + data.error));
-          resolve(data.error);
-        }
-        else {
+          Logger.error(`Error ${res.statusCode}: ${data.error}`);
+          reject(data.error);
+        } else {
           Logger.log(`Response from ${path}: ${res.statusCode}`)
           resolve(data);
         }
