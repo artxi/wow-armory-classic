@@ -1,13 +1,14 @@
 const MongoClient = require('mongodb').MongoClient;
 
 const Logger = require('./logger');
+const Settings = require('../config/settings');
 
 let Database;
 
 module.exports = {
 
   connect() {
-    MongoClient.connect('mongodb://192.168.1.103:27017', { useUnifiedTopology: true }, (err, db) => {
+    MongoClient.connect(Settings.mongoDB.connectionString, { useUnifiedTopology: true }, (err, db) => {
       if (err) {
         Logger.error(err);
       } else {

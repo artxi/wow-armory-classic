@@ -18,7 +18,7 @@ async function request(path) {
       "method": "GET",
       "hostname": "classic.warcraftlogs.com",
       "port": 443,
-      "path": `/v1${path}?api_key=${Settings.warcraftLogsKey}`,
+      "path": `/v1${path}?api_key=${Settings.warcraftLogs.apiKey}`,
       "headers": {
         "cache-control": "no-cache"
       }
