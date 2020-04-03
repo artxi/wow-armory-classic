@@ -1,7 +1,6 @@
-const Https = require("https");
-
 const Logger = require('./logger');
 const Settings = require('../config/settings');
+const Utils = require('./utils.js');
 
 module.exports = {
 
@@ -44,43 +43,15 @@ module.exports = {
 };
 
 async function request(path) {
-  return new Promise((resolve, reject) => {
-    const options = {
-      "method": "GET",
-      "hostname": "classic.warcraftlogs.com",
-      "port": 443,
-      "path": `/v1${path}?api_key=${Settings.warcraftLogs.apiKey}`,
-      "headers": {
-        "cache-control": "no-cache"
-      }
-    };
+  const options = {
+    "method": "GET",
+    "hostname": "classic.warcraftlogs.com",
+    "port": 443,
+    "path": `/v1${path}?api_key=${Settings.warcraftLogs.apiKey}`,
+    "headers": {
+      "cache-control": "no-cache"
+    }
+  };
 
-    Logger.log(`Request to ${path}`);
-
-    const req = Https.request(options, res => {
-      let parts = [];
-      req.on('error', err => {
-        callback(err);
-      });
-
-      res.on("data", part => {
-        parts.push(part);
-      });
-
-      res.on("end", () => {
-        let data = Buffer.concat(parts);
-        data = JSON.parse(data);
-
-        if (res.statusCode < 200 || res.statusCode >= 300) {
-          Logger.error(`Error ${res.statusCode}: ${data.error}`);
-          reject(data.error);
-        } else {
-          Logger.log(`Response from ${path}: ${res.statusCode}`);
-          resolve(data);
-        }
-      });
-    });
-
-    req.end();
-  });
+  return Utils.httpGet(options);
 }

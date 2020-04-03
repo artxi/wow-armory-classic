@@ -23,7 +23,8 @@ App.get('/reports/new/:code', async (req, res) => {
     Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
     res.send(await Main.parseNewReport(req.params.code));
   } catch (err) {
-    res.status(400).send(err);
+    Logger.error(err.message || err)
+    res.status(400).send(err.message || err);
   }
 });
 
