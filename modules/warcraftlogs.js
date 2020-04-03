@@ -13,7 +13,7 @@ module.exports = {
 };
 
 async function request(path) {
-  return new Promise ((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     const options = {
       "method": "GET",
       "hostname": "classic.warcraftlogs.com",
@@ -24,19 +24,19 @@ async function request(path) {
       }
     };
 
-    Logger.log(`Request to ${path}`)
+    Logger.log(`Request to ${path}`);
 
-    const req = Https.request(options, function(res) {
+    const req = Https.request(options, res => {
       let parts = [];
-      req.on('error', function(err) {
+      req.on('error', err => {
         callback(err);
       });
 
-      res.on("data", function(part) {
+      res.on("data", part => {
         parts.push(part);
       });
 
-      res.on("end", function() {
+      res.on("end", () => {
         let data = Buffer.concat(parts);
         data = JSON.parse(data);
 
@@ -44,7 +44,7 @@ async function request(path) {
           Logger.error(`Error ${res.statusCode}: ${data.error}`);
           reject(data.error);
         } else {
-          Logger.log(`Response from ${path}: ${res.statusCode}`)
+          Logger.log(`Response from ${path}: ${res.statusCode}`);
           resolve(data);
         }
       });
