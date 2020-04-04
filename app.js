@@ -21,7 +21,19 @@ App.get('/', (req, res) => {
 App.get('/reports/new/:code', async (req, res) => {
   try {
     Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
+    
     res.send(await Main.parseNewReport(req.params.code));
+    Logger.log(`${Utils.parseIp(req.ip)} received summary for report ${req.params.code}`);
+  } catch (err) {
+    Logger.error(err.message || err)
+    res.status(400).send(err.message || err);
+  }
+});
+
+App.get('/reports/:code/boss/:id', async (req, res) => {
+  try {
+    Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
+    res.send(await Main.parseFightFromReport(req.params.code, req.params.id));
   } catch (err) {
     Logger.error(err.message || err)
     res.status(400).send(err.message || err);

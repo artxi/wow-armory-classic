@@ -8,35 +8,20 @@ module.exports = {
    * User requests a new report
    * @param {string} reportCode from the Warcraft Logs URL
    */
-  async parseNewReport(reportCode) {
-    // Check if we have this report
-    let report = await Database.findOne('reports', {code: reportCode});
+  async parseNewReport(reportCode, force) {
 
-    // If not, request report to Warcraft Logs
-    if (!report) {
-      report = await this.requestNewReport(reportCode);
-    }
-
-    // Return a summary so the user can choose a fight
-    return WarcraftLogs.getReportSummary(report);
+    return WarcraftLogs.getReportSummary(reportCode);
   },
 
   /**
-   * Request a report to Warcraft Logs API and save it to our database
+   * User selected a fight to parse from the report
    * @param {string} reportCode from the Warcraft Logs URL
+   * @param {string} bossId chosen by the user from the fight options
    */
-  async requestNewReport(reportCode) {
-    const newReportData = await WarcraftLogs.requestReport(reportCode);
+  async parseFightFromReport(reportCode, bossId) {
+    const fightData = await WarcraftLogs.requestFightData(reportCode, bossId);
 
-    // Add the report code
-    const dataToSave = {
-      code: reportCode,
-      data: newReportData
-    };
-
-    await Database.insertOne('reports', dataToSave);
-
-    // We return this to display a summary
-    return dataToSave;
+    // No need to return data. Redirect user once done
+    await WarcraftLogs.parseFightData(fightData);
   }
 };
