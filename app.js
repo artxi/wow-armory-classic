@@ -5,6 +5,7 @@ const Main = require('./modules/main.js');
 
 const Express = require('express');
 const App = Express();
+const cors = require('cors');
 const Path = require('path');
 
 const Settings = require('./config/settings');
@@ -12,6 +13,8 @@ const Settings = require('./config/settings');
 Logger.printInitInfo();
 
 Database.connect();
+
+App.use(cors());
 
 App.get('/', (req, res) => {
   res.sendFile(Path.resolve('public/views/index.html'));
