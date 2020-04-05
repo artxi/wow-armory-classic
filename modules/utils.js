@@ -26,8 +26,8 @@ module.exports = {
           data = JSON.parse(data);
   
           if (res.statusCode < 200 || res.statusCode >= 300) {
-            Logger.error(`Error ${res.statusCode}: ${data.error}`);
-            reject(data.error);
+            Logger.error(`Error ${res.statusCode}: ${data.error || data.detail}`);
+            reject(data);
           } else {
             Logger.log(`Response from ${options.path.substring(0, options.path.indexOf('?'))}: ${res.statusCode}`);
             resolve(data);

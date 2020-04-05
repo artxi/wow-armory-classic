@@ -71,5 +71,31 @@ module.exports = {
   },
   error: (message) => {
     log('error', message);
+  },
+  getErrorMessage: (error) => {
+    const errorDetails = {
+      message: 'Unknown error',
+      code: 400
+    }
+
+    if (error.code) {
+      errorDetails.code = error.code;
+    } else if (error.status) {
+      errorDetails.code = error.status;
+    }
+
+    if (typeof error === 'string') {
+      errorDetails.message = error;
+    }
+    
+    if (error.error && typeof error.error === 'string') {
+      errorDetails.message = error.error;
+    }
+
+    if (error.detail && typeof error.detail === 'string') {
+      errorDetails.message = error.detail;
+    }
+    
+    return errorDetails;
   }
 };
