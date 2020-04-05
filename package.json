@@ -13,6 +13,7 @@
     "express": "^4.17.1",
     "logrotator": "^1.1.0",
     "mongodb": "^3.5.5",
+    "simple-oauth2": "^3.4.0",
     "socket.io": "^2.3.0"
   }
 }

@@ -1,6 +1,7 @@
 const Logger = require('./logger');
 const Database = require('./database');
 const WarcraftLogs = require('./warcraftlogs');
+const Blizzard = require('./blizzard');
 
 module.exports = {
 
@@ -8,9 +9,24 @@ module.exports = {
    * User requests a new report
    * @param {string} reportCode from the Warcraft Logs URL
    */
-  async parseNewReport(reportCode, force) {
+  async parseNewReport(reportCode) {
 
     return WarcraftLogs.getReportSummary(reportCode);
+  },
+
+  /**
+   * Gets item data from database or Blizzard API
+   * @param {string} itemId from the Warcraft Logs URL
+   */
+  async getItem(itemId) {
+    let item = await Database.findOne('items', {id: itemId});
+
+    if (!item) {
+      item = await Blizzard.requestItem(itemId);
+      Database.insertOne('items', item);
+    }
+
+    return item;
   },
 
   /**

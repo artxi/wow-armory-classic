@@ -31,6 +31,7 @@ module.exports = {
 
   async parseFightData(fightData) {
     // Save character data to database
+    const charactersData = fightData.events.filter(e => e.type === 'combatantinfo');
   },
 
   /**

@@ -40,5 +40,15 @@ App.get('/reports/:code/boss/:id', async (req, res) => {
   }
 });
 
+App.get('/items/:id', async (req, res) => {
+  try {
+    Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
+    res.send(await Main.getItem(req.params.id));
+  } catch (err) {
+    Logger.error(err.message || err)
+    res.status(400).send(err.message || err);
+  }
+});
+
 App.use(Express.static('public'));
 App.listen(Settings.port || 3000);
