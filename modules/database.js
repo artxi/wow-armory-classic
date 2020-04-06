@@ -30,6 +30,11 @@ module.exports = {
     Logger.log(`DB insert: ${collection} ${result.insertedId.toString()}`);
   },
 
+  async insertMany(collection, data) {
+    await Database.collection(collection).insertMany(data);
+    Logger.log(`DB insert many: ${collection}`);
+  },
+
   async updateOne(collection, query, data) {
     await Database.collection(collection).updateOne(query, data);
   }
