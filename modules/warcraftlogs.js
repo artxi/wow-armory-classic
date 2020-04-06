@@ -2,6 +2,7 @@ const Logger = require('./logger');
 const Settings = require('../config/settings');
 const Utils = require('./utils.js');
 const Database = require('./database');
+const Character = require('./character');
 
 module.exports = {
 
@@ -29,9 +30,19 @@ module.exports = {
     return request(path);
   },
 
-  async parseFightData(fightData) {
+  async parseFightData(fightData, reportCode) {
     // Save character data to database
-    const charactersData = fightData.events.filter(e => e.type === 'combatantinfo');
+    const characterGearData = fightData.events.filter(e => e.type === 'combatantinfo');
+    const characterData = await Database.findOne('reports', {code: reportCode}, {_id: 0, characters: 1});
+
+    const promises = [];
+    
+    for (const character of characterData.characters) {
+      const characterGear = characterGearData.find(c => c.sourceID === character.id).gear;
+      promises.push(Character.update(character, characterGear));
+    }
+
+    await Promise.all(promises);
   },
 
   /**
@@ -54,6 +65,9 @@ module.exports = {
       // warn the user a new fight parse will erase previous data
       reportSummary.alreadyParsed = true;
     }
+
+    delete reportSummary._id;
+    delete reportSummary.characters;
     
     return reportSummary;
   },
@@ -68,6 +82,10 @@ module.exports = {
       title: report.title,
       uploader: report.owner,
       date: report.end,
+      characters: report.friendlies.filter(f => {
+        delete f.fights;
+        return f.type !== 'Boss'
+      }),
       fights: []
     };
 

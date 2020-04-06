@@ -31,6 +31,6 @@ module.exports = {
     const fightData = await WarcraftLogs.requestFightData(reportCode, bossId);
 
     // No need to return data. Redirect user once done
-    await WarcraftLogs.parseFightData(fightData);
+    await WarcraftLogs.parseFightData(fightData, reportCode);
   }
 };
