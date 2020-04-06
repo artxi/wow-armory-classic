@@ -51,5 +51,15 @@ App.get('/items/:id', async (req, res) => {
   }
 });
 
+App.get('/characters/:server/:name', async (req, res) => {
+  try {
+    Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
+    res.send(await Main.getCharacter(req.params.server, req.params.name));
+  } catch (error) {
+    const errorDetails = Logger.getErrorMessage(error);
+    res.status(errorDetails.code).send(errorDetails.message);
+  }
+});
+
 App.use(Express.static('public'));
 App.listen(Settings.port || 3000);

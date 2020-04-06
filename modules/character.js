@@ -4,6 +4,31 @@ const Item = require('./item');
 
 module.exports = {
 
+  /**
+   * @param {string} server will check lowerCase to lowerCase
+   * @param {string} characterName will check lowerCase to lowerCase
+   */
+  async getCharacter(server, characterName) {
+    const serverToCheck = server[0].toUpperCase() + server.toLowerCase().slice(1);
+    const nameToCheck = characterName[0].toUpperCase() + characterName.toLowerCase().slice(1);
+
+    const character = await Database.findOne('characters', {
+      name: nameToCheck,
+      server: serverToCheck
+    });
+
+    if (!character) {
+      throw new Error('Character not found');
+    }
+
+    return character;
+  },
+
+  /**
+   * Updates or creates a character with the new gear set
+   * @param {object} characterData name, server, class, etc
+   * @param {object} characterGear new gear from parsed log
+   */
   async updateCharacter(characterData, characterGear) {
     const character = await Database.findOne('characters', {
       guid: characterData.guid,
@@ -17,6 +42,11 @@ module.exports = {
     }
   },
 
+  /**
+   * Creates a new character
+   * @param {object} characterData name, server, class, etc
+   * @param {object} characterGear new gear from parsed log
+   */
   async create(characterData, characterGear) {
     const character = {
       guid: characterData.guid,
@@ -29,12 +59,21 @@ module.exports = {
     return Database.insertOne('characters', character);
   },
 
+  /**
+   * Updates an existing character with the new gear set
+   * @param {*} mongoId 
+   * @param {object} characterGear new gear from parsed log
+   */
   async update(mongoId, characterGear) {
     const newGear = await this.formatGear(characterGear);
 
     return Database.updateOne('characters', {_id: mongoId}, {$set: {gear: newGear}});
   },
 
+  /**
+   * Convert gear object to desired format for storage & display
+   * @param {object} characterGear new gear from parsed log
+   */
   async formatGear(characterGear) {
     const gear = [];
 

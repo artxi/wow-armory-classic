@@ -1,6 +1,7 @@
 const Logger = require('./logger');
 const WarcraftLogs = require('./warcraftlogs');
 const Item = require('./item');
+const Character = require('./character');
 
 module.exports = {
 
@@ -20,6 +21,16 @@ module.exports = {
   async getItem(itemId) {
     
     return Item.getItem(itemId);
+  },
+
+  /**
+   * Return character data
+   * @param {string} server will check lowerCase to lowerCase
+   * @param {string} characterName will check lowerCase to lowerCase
+   */
+  async getCharacter(server, characterName) {
+    
+    return Character.getCharacter(server, characterName);
   },
 
   /**
