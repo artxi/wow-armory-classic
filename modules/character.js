@@ -93,7 +93,14 @@ module.exports = {
       };
 
       if (gearItem.permanentEnchant) {
-        item.enchant = gearItem.permanentEnchant;
+        item.enchant = {
+          id: gearItem.permanentEnchant,
+        };
+
+        const enchant = await Database.findOne('enchants', {id: gearItem.permanentEnchant});
+        if (enchant && enchant.name) {
+          item.enchant.name = enchant.name;
+        }
       }
 
       switch (item.slot) {
