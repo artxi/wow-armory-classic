@@ -23,7 +23,7 @@ module.exports = {
    */
   async requestFightData(reportCode, bossId) {
     const fullReport = await Database.findOne('reports', {code: reportCode});
-    const fight = fullReport.fights.find(f => f.id.toString() === bossId);
+    const fight = fullReport.fights.find(f => f.id === bossId);
 
     const path = `/report/events/summary/${reportCode}?start=${fight.starTime}&end=${fight.endTime}&hostility=0&`;
 
