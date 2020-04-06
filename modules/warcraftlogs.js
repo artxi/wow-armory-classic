@@ -30,6 +30,11 @@ module.exports = {
     return request(path);
   },
 
+  /**
+   * 
+   * @param {object} fightData a fight event from Warcraft Logs API
+   * @param {string} reportCode from the Warcraft Logs URL
+   */
   async parseFightData(fightData, reportCode) {
     // Save character data to database
     const characterGearData = fightData.events.filter(e => e.type === 'combatantinfo');
@@ -38,8 +43,11 @@ module.exports = {
     const promises = [];
     
     for (const character of characterData.characters) {
-      const characterGear = characterGearData.find(c => c.sourceID === character.id).gear;
-      promises.push(Character.update(character, characterGear));
+      const characterGear = characterGearData.find(c => c.sourceID === character.id);
+      if (characterGear) {
+        const gear = characterGear.gear;
+        promises.push(Character.updateCharacter(character, gear));
+      }
     }
 
     await Promise.all(promises);
