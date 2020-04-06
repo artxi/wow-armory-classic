@@ -18,8 +18,8 @@ module.exports = {
     });
   },
 
-  async findOne(collection, query) {
-    const result = await Database.collection(collection).findOne(query);
+  async findOne(collection, query, projection) {
+    const result = await Database.collection(collection).findOne(query, {projection: projection || {}});
     Logger.log(`DB find: ${collection} ${JSON.stringify(query)}`)
 
     return result;
