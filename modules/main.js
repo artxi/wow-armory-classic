@@ -1,7 +1,6 @@
 const Logger = require('./logger');
-const Database = require('./database');
 const WarcraftLogs = require('./warcraftlogs');
-const Blizzard = require('./blizzard');
+const Item = require('./item');
 
 module.exports = {
 
@@ -15,18 +14,12 @@ module.exports = {
   },
 
   /**
-   * Gets item data from database or Blizzard API
+   * Return raw item data
    * @param {string} itemId from the Warcraft Logs URL
    */
   async getItem(itemId) {
-    let item = await Database.findOne('items', {id: parseInt(itemId)});
-
-    if (!item) {
-      item = await Blizzard.requestItem(itemId);
-      Database.insertOne('items', item);
-    }
-
-    return item;
+    
+    return Item.getItem(itemId);
   },
 
   /**
