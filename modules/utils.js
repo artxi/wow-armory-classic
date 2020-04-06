@@ -1,4 +1,5 @@
-const Https = require("https");
+const Https = require('https');
+const Json2Csv = require('json2csv');
 
 const Logger = require('./logger');
 
@@ -37,5 +38,16 @@ module.exports = {
   
       req.end();
     });
+  },
+
+  formatJsonToCsv(jsonData, fields) {
+    const opts = {fields, delimiter: ';'};
+  
+    try {
+      return Json2Csv.parse(jsonData, opts);
+    } catch (err) {
+      Logger.error(err);
+    }
   }
 };
+

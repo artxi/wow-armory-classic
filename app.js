@@ -41,6 +41,17 @@ App.get('/reports/:code/boss/:id', async (req, res) => {
   }
 });
 
+App.get('/csv', async (req, res) => {
+  try {
+    Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
+    res.attachment('end_game.csv');
+    res.send(await Main.getCsv());
+  } catch (error) {
+    const errorDetails = Logger.getErrorMessage(error);
+    res.status(errorDetails.code).send(errorDetails.message);
+  }
+});
+
 App.get('/items/:id', async (req, res) => {
   try {
     Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);

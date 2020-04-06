@@ -18,6 +18,13 @@ module.exports = {
     });
   },
 
+  async find(collection, query, projection) {
+    const result = await Database.collection(collection).find(query, {projection: projection || {}}).toArray();
+    Logger.log(`DB find: ${collection} ${JSON.stringify(query)}`)
+
+    return result;
+  },
+
   async findOne(collection, query, projection) {
     const result = await Database.collection(collection).findOne(query, {projection: projection || {}});
     Logger.log(`DB find: ${collection} ${JSON.stringify(query)}`)

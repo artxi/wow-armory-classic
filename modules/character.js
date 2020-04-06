@@ -105,6 +105,7 @@ module.exports = {
 
       switch (item.slot) {
         case 'ring':
+        case 'finger':
           item.slot = `ring${ringCount++}`
           break;
         case 'trinket':
@@ -112,6 +113,12 @@ module.exports = {
           break;
         case 'rangedright':
           item.slot = 'ranged';
+          break;
+        case 'robe':
+          item.slot = 'chest';
+          break;
+        case 'cloak':
+          item.slot = 'back';
           break;
         case 'weapon':
         case 'weaponmainhand':
