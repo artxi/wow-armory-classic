@@ -25,12 +25,12 @@ module.exports = {
     return result;
   },
 
-  async insertOne(collection, query) {
-    const result = await Database.collection(collection).insertOne(query);
+  async insertOne(collection, data) {
+    const result = await Database.collection(collection).insertOne(data);
     Logger.log(`DB insert: ${collection} ${result.insertedId.toString()}`);
   },
 
-  disconnect() {
-    
+  async updateOne(collection, query, data) {
+    await Database.collection(collection).updateOne(query, data);
   }
 };
