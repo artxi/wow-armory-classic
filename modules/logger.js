@@ -95,6 +95,10 @@ module.exports = {
     if (error.detail && typeof error.detail === 'string') {
       errorDetails.message = error.detail;
     }
+
+    if (error.message && typeof error.message === 'string') {
+      errorDetails.message = error.message;
+    }
     
     return errorDetails;
   }
