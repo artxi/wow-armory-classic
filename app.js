@@ -23,7 +23,7 @@ App.get('/', (req, res) => {
 
 App.get('/reports/new/:code', async (req, res) => {
   try {
-    Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);    
+    Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
     res.send(await Main.parseNewReport(req.params.code));
   } catch (error) {
     const errorDetails = Logger.getErrorMessage(error);

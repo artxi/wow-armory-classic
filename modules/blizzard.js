@@ -63,8 +63,8 @@ async function request(path) {
   const token = await getToken();
   const options = {
     "method": "GET",
-    "hostname": "us.api.blizzard.com",
-    "path": `${path}?namespace=static-classic-us&locale=en_US&access_token=${token}`,
+    "hostname": "eu.api.blizzard.com",
+    "path": `${path}?namespace=static-classic-eu&locale=en_GB&access_token=${token}`,
     "headers": {
       "cache-control": "no-cache"
     }
