@@ -7,6 +7,7 @@ const Express = require('express');
 const App = Express();
 const cors = require('cors');
 const Path = require('path');
+const BodyParser = require('body-parser');
 
 const Settings = require('./config/settings');
 
@@ -15,26 +16,27 @@ Logger.printInitInfo();
 Database.connect();
 
 App.use(cors());
+App.use(BodyParser.json());
 
 App.get('/', (req, res) => {
   res.sendFile(Path.resolve('public/views/index.html'));
   Logger.log(`${Utils.parseIp(req.ip)} requested /`);
 });
 
-App.get('/reports/new/:code', async (req, res) => {
+App.put('/reports/new', async (req, res) => {
   try {
     Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
-    res.send(await Main.parseNewReport(req.params.code));
+    res.send(await Main.parseNewReport(req.body.code));
   } catch (error) {
     const errorDetails = Logger.getErrorMessage(error);
     res.status(errorDetails.code).send(errorDetails.message);
   }
 });
 
-App.get('/reports/:code/boss/:id', async (req, res) => {
+App.put('/reports/boss', async (req, res) => {
   try {
     Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
-    res.send(await Main.parseFightFromReport(req.params.code, req.params.id));
+    res.send(await Main.parseFightFromReport(req.body.code, req.body.boss));
   } catch (error) {
     const errorDetails = Logger.getErrorMessage(error);
     res.status(errorDetails.code).send(errorDetails.message);
