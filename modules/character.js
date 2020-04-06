@@ -110,10 +110,14 @@ module.exports = {
         case 'trinket':
           item.slot = `trinket${trinketCount++}`
           break;
+        case 'rangedright':
+          item.slot = 'ranged';
+          break;
         case 'weapon':
+        case 'weaponmainhand':
+        case 'twohweapon':
         case 'holdable':
         case 'shield':
-        case 'weaponmainhand':
           item.slot = `weapon${weaponCount++}`
           break;
       }
