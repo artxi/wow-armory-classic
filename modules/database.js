@@ -27,14 +27,14 @@ module.exports = {
 
   async findOne(collection, query, projection) {
     const result = await Database.collection(collection).findOne(query, {projection: projection || {}});
-    Logger.log(`DB find: ${collection} ${JSON.stringify(query)}`)
+    // Logger.log(`DB find: ${collection} ${JSON.stringify(query)}`)
 
     return result;
   },
 
   async insertOne(collection, data) {
-    const result = await Database.collection(collection).insertOne(data);
-    Logger.log(`DB insert: ${collection} ${result.insertedId.toString()}`);
+    await Database.collection(collection).insertOne(data);
+    Logger.log(`DB insert: ${collection}`);
   },
 
   async insertMany(collection, data) {

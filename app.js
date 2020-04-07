@@ -26,17 +26,7 @@ App.get('/', (req, res) => {
 App.put('/reports/new', async (req, res) => {
   try {
     Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
-    res.send(await Main.parseNewReport(req.body.code));
-  } catch (error) {
-    const errorDetails = Logger.getErrorMessage(error);
-    res.status(errorDetails.code).send(errorDetails.message);
-  }
-});
-
-App.put('/reports/boss', async (req, res) => {
-  try {
-    Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
-    res.send(await Main.parseFightFromReport(req.body.code, req.body.boss));
+    res.send(await Main.loadNewReport(req.body.code));
   } catch (error) {
     const errorDetails = Logger.getErrorMessage(error);
     res.status(errorDetails.code).send(errorDetails.message);

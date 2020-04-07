@@ -11,9 +11,21 @@ module.exports = {
    * User requests a new report
    * @param {string} reportCode from the Warcraft Logs URL
    */
-  async parseNewReport(reportCode) {
+  async loadNewReport(reportCode) {
 
-    return WarcraftLogs.getReportSummary(reportCode);
+    return WarcraftLogs.loadNewReport(reportCode);
+  },
+
+  /**
+   * User selected a fight to parse from the report
+   * @param {string} reportCode from the Warcraft Logs URL
+   * @param {string} bossId chosen by the user from the fight options
+   */
+  async parseFightsFromReport(reportCode) {
+    const fightData = await WarcraftLogs.requestFightData(reportCode, bossId);
+
+    // No need to return data. Redirect user once done
+    await WarcraftLogs.parseFightData(fightData, reportCode);
   },
 
   /**
@@ -33,18 +45,6 @@ module.exports = {
   async getCharacter(server, characterName) {
     
     return Character.getCharacter(server, characterName);
-  },
-
-  /**
-   * User selected a fight to parse from the report
-   * @param {string} reportCode from the Warcraft Logs URL
-   * @param {string} bossId chosen by the user from the fight options
-   */
-  async parseFightFromReport(reportCode, bossId) {
-    const fightData = await WarcraftLogs.requestFightData(reportCode, bossId);
-
-    // No need to return data. Redirect user once done
-    await WarcraftLogs.parseFightData(fightData, reportCode);
   },
 
   async getCsv() {
