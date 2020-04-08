@@ -3,7 +3,7 @@ const WarcraftLogs = require('./warcraftlogs');
 const Item = require('./item');
 const Character = require('./character');
 const Database = require('./database');
-const Utils = require('./utils.js');
+const Utils = require('./utils');
 
 module.exports = {
 
@@ -33,7 +33,7 @@ module.exports = {
    * @param {string} itemId from the Warcraft Logs URL
    */
   async getItem(itemId) {
-    
+
     return Item.getItem(itemId);
   },
 
@@ -43,12 +43,12 @@ module.exports = {
    * @param {string} characterName will check lowerCase to lowerCase
    */
   async getCharacter(server, characterName) {
-    
+
     return Character.getCharacter(server, characterName);
   },
 
   async getCsv() {
-    let characterData = await Database.find('characters', {});
+    let characterData = await Database.find('characters', {guildName: 'End Game'});
 
     const slots = ['head', 'neck', 'shoulder', 'chest', 'waist', 'legs', 'feet', 'wrist',
       'hand', 'ring1', 'ring2', 'trinket1', 'trinket2', 'back', 'weapon1', 'weapon2', 'ranged'];
@@ -71,8 +71,11 @@ module.exports = {
         'class': character.class
       };
 
+      // Get last set from Vaelastrasz
+      const gearSet = character.gearSets.filter(s => s.bossId === 611).sort((a,b) => b.date - a.date)[0];
+
       for (const slot of slots) {
-        const item = character.gear.find(g => g.slot === slot);
+        const item = gearSet.items.find(g => g.slot === slot);
         if (item) {
           gearLine[slot] = item.name;
           if (item.enchant) {

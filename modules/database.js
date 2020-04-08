@@ -44,5 +44,9 @@ module.exports = {
 
   async updateOne(collection, query, data) {
     await Database.collection(collection).updateOne(query, data);
+  },
+
+  async updateMany(collection, query, data) {
+    await Database.collection(collection).updateMany(query, data);
   }
 };
