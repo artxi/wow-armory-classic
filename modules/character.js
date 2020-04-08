@@ -29,37 +29,44 @@ module.exports = {
    * @param {object} characterData name, server, class, etc
    * @param {object} characterGear new gear from parsed log
    * @param {number} reportDate date from the report
-   * @param {string} bossName to display
+   * @param {string} bossName name of the fight boss
+   * @param {number} bossId id of the fight boss
    */
   async addGearSet(characterData, characterGear, reportDate, bossName, bossId) {
+    let gear = await this.formatGear(characterGear);
+
+    gear = {
+      ...gear,
+      bossName: bossName,
+      bossId: bossId,
+      date: reportDate
+    };
+
     const character = await Database.findOne('characters', {
       guid: characterData.guid,
       name: characterData.name
     });
 
     if (character) {
-      return this.update(character._id, characterGear, reportDate, bossName, bossId);
+      return this.update(character._id, gear);
     } else {
-      return this.create(characterData, characterGear, reportDate, bossName, bossId);
+      return this.create(characterData, gear);
     }
   },
 
   /**
    * Creates a new character
    * @param {object} characterData name, server, class, etc
-   * @param {object} characterGear new gear from parsed log
-   * @param {number} reportDate date from the report
+   * @param {object} newGear new gear from parsed log
    */
-  async create(characterData, characterGear, reportDate, bossName, bossId) {
+  async create(characterData, newGear) {
     const character = {
       guid: characterData.guid,
       name: characterData.name,
       server: characterData.server,
       class: characterData.type,
-      gearSets: []
+      gearSets: [newGear]
     };
-
-    character.gearSets.push(await this.formatGear(characterGear, reportDate, bossName, bossId));
 
     return Database.insertOne('characters', character);
   },
@@ -67,11 +74,9 @@ module.exports = {
   /**
    * Updates an existing character with the new gear set
    * @param {*} mongoId 
-   * @param {object} characterGear new gear from parsed log
-   * @param {number} reportDate date from the report
+   * @param {object} newGear new gear from parsed log
    */
-  async update(mongoId, characterGear, reportDate, bossName, bossId) {
-    const newGear = await this.formatGear(characterGear, reportDate, bossName, bossId);
+  async update(mongoId, newGear) {
 
     return Database.updateOne('characters', {_id: mongoId}, {$push: {gearSets: newGear}});
   },
@@ -79,13 +84,9 @@ module.exports = {
   /**
    * Convert gear object to desired format for storage & display
    * @param {object} characterGear new gear from parsed log
-   * @param {number} reportDate date from the report
    */
-  async formatGear(characterGear, reportDate, bossName, bossId) {
+  async formatGear(characterGear) {
     const gear = {
-      date: reportDate,
-      bossName: bossName,
-      bossId: bossId,
       items: []
     };
 
@@ -143,8 +144,6 @@ module.exports = {
 
       gear.items.push(item);
     }
-
-    gear.date = reportDate;
 
     return gear;
   }

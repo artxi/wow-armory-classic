@@ -7,8 +7,8 @@ const Character = require('./character');
 module.exports = {
 
   /**
-   * Get a report summary so the user can choose a fight
-   * @param {object} report a full report
+   * Requests a full report if not present and parses data from all boss fights
+   * @param {object} reportCode a full report
    */
   async loadNewReport(reportCode) {
     // Check if we have this report
@@ -26,10 +26,14 @@ module.exports = {
     await Database.insertOne('reports', reportSummary);
 
     // Add gear from every fight to characters
+    // TO-DO: Ideally we want to parse all fights asynchronously (Promise.all())
+    // but atm it duplicates characters in DB. Re-think flow
     for (const fight of reportSummary.fights) {
-      await this.parseFightData(fight.id, fight.name, reportCode, reportSummary.date);
+      await this.parseFightData(fight.id, fight.name, reportSummary);
     }
 
+    // Don't need this on response
+    // Probably don't even need response
     delete reportSummary._id;
     delete reportSummary.characters;
 
@@ -37,42 +41,40 @@ module.exports = {
   },
 
   /**
-   * Request a fight log from Warcraft Logs API
-   * @param {string} bossId chosen by the user from the fight options
-   * @param {string} reportCode from the Warcraft Logs URL
-   */
-  async requestFightData(bossId, reportCode) {
-    const fullReport = await Database.findOne('reports', {code: reportCode});
-    const fight = fullReport.fights.find(f => f.id === bossId);
-
-    const path = `/report/events/summary/${reportCode}?start=${fight.startTime}&end=${fight.endTime}&hostility=0&`;
-
-    return request(path);
-  },
-
-  /**
-   * 
-   * @param {object} fightData a fight event from Warcraft Logs API
-   * @param {string} reportCode from the Warcraft Logs URL
+   * Retrieves fight logs and processes all character gear data
+   * @param {number} bossId id of the boss fight to parse
+   * @param {string} bossName to insert in each gear set
+   * @param {object} reportSummary from the full report
    * @param {number} reportDate date from the report
    */
-  async parseFightData(bossId, bossName, reportCode, reportDate) {
-    const fightData = await this.requestFightData(bossId, reportCode);
-    // Save character data to database
+  async parseFightData(bossId, bossName, reportSummary) {
+    const fightData = await this.requestFightData(bossId, reportSummary);
     const characterGearData = fightData.events.filter(e => e.type === 'combatantinfo');
-    const characterData = await Database.findOne('reports', {code: reportCode}, {_id: 0, characters: 1});
+    const characterData = reportSummary.characters;
 
     const promises = [];
     
-    for (const character of characterData.characters) {
+    for (const character of characterData) {
       const characterGear = characterGearData.find(c => c.sourceID === character.id);
       if (characterGear) {
         const gearSet = characterGear.gear;
-        promises.push(Character.addGearSet(character, gearSet, reportDate, bossName, bossId));
+        promises.push(Character.addGearSet(character, gearSet, reportSummary.date, bossName, bossId));
       }
     }
 
     await Promise.all(promises);
+  },
+
+  /**
+   * Request a fight log from Warcraft Logs API
+   * @param {string} bossId chosen by the user from the fight options
+   * @param {object} fullReport from Warcraft Logs
+   */
+  async requestFightData(bossId, fullReport) {
+    const fight = fullReport.fights.find(f => f.id === bossId);
+    const path = `/report/events/summary/${fullReport.code}?start=${fight.startTime}&end=${fight.endTime}&hostility=0&`;
+
+    return request(path);
   },
 
   /**
@@ -110,7 +112,7 @@ module.exports = {
           name: fight.name,
           startTime: fight.start_time,
           endTime: fight.end_time
-          // Add portrait
+          // Add portrait if possible
         });
       }
     }

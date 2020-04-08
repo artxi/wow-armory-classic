@@ -47,6 +47,11 @@ module.exports = {
     return Character.getCharacter(server, characterName);
   },
 
+  /**
+   * For now, this is just for guild purposes (Asdern's spreadsheet)
+   * Guild name is hardcoded both here and in DB
+   * Boss is also hardcoded because we're wearing 'standard' gear
+   */
   async getCsv() {
     let characterData = await Database.find('characters', {guildName: 'End Game'});
 
@@ -71,7 +76,7 @@ module.exports = {
         'class': character.class
       };
 
-      // Get last set from Broodlord
+      // Get last set from Broodlord (612)
       const gearSet = character.gearSets.filter(s => s.bossId === 612).sort((a,b) => b.date - a.date)[0];
 
       for (const slot of slots) {
