@@ -71,8 +71,8 @@ module.exports = {
         'class': character.class
       };
 
-      // Get last set from Vaelastrasz
-      const gearSet = character.gearSets.filter(s => s.bossId === 611).sort((a,b) => b.date - a.date)[0];
+      // Get last set from Broodlord
+      const gearSet = character.gearSets.filter(s => s.bossId === 612).sort((a,b) => b.date - a.date)[0];
 
       for (const slot of slots) {
         const item = gearSet.items.find(g => g.slot === slot);
