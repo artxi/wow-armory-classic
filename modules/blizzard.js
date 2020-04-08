@@ -17,6 +17,15 @@ const oauth2 = require("simple-oauth2").create(credentials);
 let token;
 
 module.exports = {
+
+  /**
+   * We do this so we already have a token
+   * and it doesn't request multiple later on asyncronous calls
+   */
+  load() {
+    getToken();
+  },
+
   /**
    * Request creature data to Wow Classic API and save it to our database
    * @param {string} creatureId from the Warcraft Logs URL

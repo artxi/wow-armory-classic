@@ -1,7 +1,8 @@
 const Logger = require('./modules/logger');
-const Utils = require('./modules/utils.js');
+const Utils = require('./modules/utils');
 const Database = require('./modules/database');
-const Main = require('./modules/main.js');
+const Main = require('./modules/main');
+const Blizzard = require('./modules/blizzard');
 
 const Express = require('express');
 const App = Express();
@@ -14,6 +15,7 @@ const Settings = require('./config/settings');
 Logger.printInitInfo();
 
 Database.connect();
+Blizzard.load();
 
 App.use(cors());
 App.use(BodyParser.json());
