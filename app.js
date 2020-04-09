@@ -66,5 +66,15 @@ App.get('/characters/:server/:name', async (req, res) => {
   }
 });
 
+App.get('/guilds/:server/:guild/roster', async (req, res) => {
+  try {
+    Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
+    res.send(await Main.getGuildRoster(req.params.server, req.params.guild));
+  } catch (error) {
+    const errorDetails = Logger.getErrorMessage(error);
+    res.status(errorDetails.code).send(errorDetails.message);
+  }
+});
+
 App.use(Express.static('public'));
 App.listen(Settings.port || 3000);

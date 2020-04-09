@@ -47,6 +47,23 @@ module.exports = {
     return Character.getCharacter(server, characterName);
   },
 
+  async getGuildRoster(serverName, guildName) {
+    const guildCharacters = await Database.find('characters', {
+      guildName: {$regex: new RegExp(guildName, 'i')}
+    });
+
+    for (const character of guildCharacters) {
+      const gear = character.gearSets.filter(s => s.bossId === 612).sort((a,b) => b.date - a.date)[0];
+
+      character.lastUpdated = gear.date;
+      character.gear = gear.items;
+
+      delete character.gearSets;
+    }
+
+    return guildCharacters;
+  },
+
   /**
    * For now, this is just for guild purposes (Asdern's spreadsheet)
    * Guild name is hardcoded both here and in DB
