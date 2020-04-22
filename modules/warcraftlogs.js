@@ -15,7 +15,7 @@ module.exports = {
     let reportExists = await Database.findOne('reports', {code: reportCode}, {_id: 1});
 
     if (reportExists) {
-      return 'This log is already in our database';
+      return {message: 'This log is already in our database'};
     }
 
     // If not, request report to Warcraft Logs
