@@ -28,7 +28,7 @@ App.get('/', (req, res) => {
 App.put('/reports/new', async (req, res) => {
   try {
     Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
-    res.send(await Main.loadNewReport(req.body.code));
+    res.status(200).send(await Main.loadNewReport(req.body.code));
   } catch (error) {
     const errorDetails = Logger.getErrorMessage(error);
     res.status(errorDetails.code).send(errorDetails.message);
