@@ -19,7 +19,7 @@ module.exports = {
     return item;
   },
 
-  async getMockOffhand() {
+  async getMockOffHand() {
     return Database.findOne('items', {id: 0});
   },
 
