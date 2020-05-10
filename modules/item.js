@@ -17,5 +17,17 @@ module.exports = {
     }
 
     return item;
+  },
+
+  async getMockOffhand() {
+    return Database.findOne('items', {id: 0});
+  },
+
+  async getMockRanged() {
+    return Database.findOne('items', {id: 1});
+  },
+
+  async getMockRelic() {
+    return Database.findOne('items', {id: 2});
   }
 };

@@ -35,6 +35,18 @@ module.exports = {
   async addGearSet(characterData, characterGear, reportDate, bossName, bossId) {
     let gear = await this.formatGear(characterGear);
 
+    if (!gear.items.weapon2) {
+      gear.items.weapon2 = await Item.getMockOffHand();
+    }
+
+    if (!gear.items.ranged) {
+      if (['Druid', 'Paladin', 'Shaman'].includes(characterData.type)) {
+        gear.items.ranged = await Item.getMockRelic();
+      } else {
+        gear.items.ranged = await Item.getMockRanged();
+      }
+    }
+
     gear = {
       ...gear,
       bossName: bossName,
