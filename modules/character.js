@@ -87,7 +87,7 @@ module.exports = {
    */
   async formatGear(characterGear) {
     const gear = {
-      items: []
+      items: {}
     };
 
     let ringCount = 1;
@@ -97,12 +97,13 @@ module.exports = {
     for (const gearItem of characterGear.filter(i => i.id !== 0)) {
       const itemData = await Item.getItem(gearItem.id);
 
+      let slot = itemData.inventory_type.type.toLowerCase()
+
       const item = {
         id: gearItem.id,
         name: itemData.name,
         quality: itemData.quality.type.toLowerCase(),
-        icon: gearItem.icon,
-        slot: itemData.inventory_type.type.toLowerCase()
+        icon: gearItem.icon
       };
 
       if (gearItem.permanentEnchant) {
@@ -116,33 +117,34 @@ module.exports = {
         }
       }
 
-      switch (item.slot) {
+      switch (slot) {
         case 'ring':
         case 'finger':
-          item.slot = `ring${ringCount++}`
+          slot = `ring${ringCount++}`
           break;
         case 'trinket':
-          item.slot = `trinket${trinketCount++}`
+          slot = `trinket${trinketCount++}`
           break;
         case 'rangedright':
-          item.slot = 'ranged';
+          slot = 'ranged';
           break;
         case 'robe':
-          item.slot = 'chest';
+          slot = 'chest';
           break;
         case 'cloak':
-          item.slot = 'back';
+          slot = 'back';
           break;
         case 'weapon':
         case 'weaponmainhand':
         case 'twohweapon':
         case 'holdable':
         case 'shield':
-          item.slot = `weapon${weaponCount++}`
+        case 'weaponoffhand':
+          slot = `weapon${weaponCount++}`
           break;
       }
 
-      gear.items.push(item);
+      gear.items[slot] = item;
     }
 
     return gear;

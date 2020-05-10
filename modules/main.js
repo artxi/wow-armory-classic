@@ -43,8 +43,10 @@ module.exports = {
    * @param {string} characterName will check lowerCase to lowerCase
    */
   async getCharacter(server, characterName) {
+    const character = await Character.getCharacter(server, characterName);
+    character.gearSets = character.gearSets.sort((a, b) => b.date - a.date);
 
-    return Character.getCharacter(server, characterName);
+    return character;
   },
 
   async getGuildRoster(serverName, guildName) {
@@ -53,7 +55,7 @@ module.exports = {
     });
 
     for (const character of guildCharacters) {
-      const gear = character.gearSets.filter(s => s.bossId === 612).sort((a,b) => b.date - a.date)[0];
+      const gear = character.gearSets.filter(s => s.bossId === 612).sort((a, b) => b.date - a.date)[0];
 
       character.lastUpdated = gear.date;
       character.gear = gear.items;
@@ -94,7 +96,7 @@ module.exports = {
       };
 
       // Get last set from Broodlord (612)
-      const gearSet = character.gearSets.filter(s => s.bossId === 612).sort((a,b) => b.date - a.date)[0];
+      const gearSet = character.gearSets.filter(s => s.bossId === 612).sort((a, b) => b.date - a.date)[0];
 
       for (const slot of slots) {
         const item = gearSet.items.find(g => g.slot === slot);
