@@ -5,6 +5,8 @@ const Main = require('./modules/main');
 const Blizzard = require('./modules/blizzard');
 
 const Express = require('express');
+const Https = require('https');
+const Fs = require('fs');
 const App = Express();
 const cors = require('cors');
 const Path = require('path');
@@ -76,5 +78,9 @@ App.get('/guilds/:server/:guild/roster', async (req, res) => {
   }
 });
 
-App.use(Express.static('public'));
-App.listen(Settings.port || 3000);
+const options = {
+  key: Fs.readFileSync(Settings.https.key),
+  cert: Fs.readFileSync(Settings.https.cert)
+};
+
+Https.createServer(options, App).listen(Settings.port || 3000);
