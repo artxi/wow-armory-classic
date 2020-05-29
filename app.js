@@ -22,11 +22,6 @@ Blizzard.load();
 App.use(cors());
 App.use(BodyParser.json());
 
-App.get('/', (req, res) => {
-  res.sendFile(Path.resolve('public/views/index.html'));
-  Logger.log(`${Utils.parseIp(req.ip)} requested /`);
-});
-
 App.put('/reports/new', async (req, res) => {
   try {
     Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
