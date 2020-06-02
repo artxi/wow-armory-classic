@@ -77,7 +77,12 @@ module.exports = {
     const slots = ['head', 'neck', 'shoulder', 'chest', 'waist', 'legs', 'feet', 'wrist',
       'hand', 'ring1', 'ring2', 'trinket1', 'trinket2', 'back', 'weapon1', 'weapon2', 'ranged'];
 
-    const fields = ['S.No', 'name', 'class', ...slots];
+    const fields = ['S.No', 'name', 'class'];
+
+    for (const slot of slots) {
+      fields.push(slot + 'Quality');
+      fields.push(slot);
+    }
 
     const jsonData = [];
 
@@ -100,8 +105,10 @@ module.exports = {
 
       for (const slot of slots) {
         const item = gearSet.items[slot];
-        if (item) {
+        if (item && item.quality) {
+          gearLine[slot + 'Quality'] = item.quality;
           gearLine[slot] = item.name;
+          
           if (item.enchant) {
             let name;
 
