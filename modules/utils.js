@@ -41,7 +41,7 @@ module.exports = {
   },
 
   formatJsonToCsv(jsonData, fields) {
-    const opts = {fields, delimiter: ';'};
+    const opts = {fields, delimiter: ';', excelStrings: true, withBOM: true};
   
     try {
       return Json2Csv.parse(jsonData, opts);
