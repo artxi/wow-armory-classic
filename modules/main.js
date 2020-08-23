@@ -101,7 +101,7 @@ module.exports = {
       };
 
       // Get last set from Broodlord (612)
-      const gearSet = character.gearSets.filter(s => s.bossId === 612).sort((a, b) => b.date - a.date)[0];
+      const gearSet = character.gearSets.filter(s => s.bossId === 612 || s.bossId === 709).sort((a, b) => b.date - a.date)[0];
 
       for (const slot of slots) {
         const item = gearSet.items[slot];
