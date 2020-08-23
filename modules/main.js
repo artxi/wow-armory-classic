@@ -100,7 +100,7 @@ module.exports = {
         'class': character.class
       };
 
-      // Get last set from Broodlord (612)
+      // Get last set from BWL Broodlord (612) or AQ Skeram (709)
       const gearSet = character.gearSets.filter(s => s.bossId === 612 || s.bossId === 709).sort((a, b) => b.date - a.date)[0];
 
       for (const slot of slots) {
