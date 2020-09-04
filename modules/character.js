@@ -41,7 +41,12 @@ module.exports = {
 
     if (!gear.items.ranged) {
       if (['Druid', 'Paladin', 'Shaman'].includes(characterData.type)) {
-        gear.items.ranged = await Item.getMockRelic();
+        if (gear.items.relic) {
+          gear.items.ranged = gear.items.relic;
+          delete gear.items.relic;
+        } else {
+          gear.items.ranged = await Item.getMockRelic();
+        }
       } else {
         gear.items.ranged = await Item.getMockRanged();
       }
