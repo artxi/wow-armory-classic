@@ -55,7 +55,7 @@ module.exports = {
     });
 
     for (const character of guildCharacters) {
-      const gear = character.gearSets.filter(s => s.bossId === 612).sort((a, b) => b.date - a.date)[0];
+      const gear = character.gearSets.filter(s => s.bossId === 612 || s.bossId === 709).sort((a, b) => b.date - a.date)[0];
 
       character.lastUpdated = gear.date;
       character.gear = gear.items;
