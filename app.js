@@ -22,10 +22,10 @@ Blizzard.load();
 App.use(cors());
 App.use(BodyParser.json());
 
-App.put('/reports/new', async (req, res) => {
+App.put('/reports/new/:code', async (req, res) => {
   try {
     Logger.log(`${Utils.parseIp(req.ip)} requested ${req.url}`);
-    res.status(200).send(await Main.loadNewReport(req.body.code));
+    res.status(200).send(await Main.loadNewReport(req.params.code));
   } catch (error) {
     const errorDetails = Logger.getErrorMessage(error);
     res.status(errorDetails.code).send(errorDetails.message);
