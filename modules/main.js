@@ -55,7 +55,7 @@ module.exports = {
     });
 
     for (const character of guildCharacters) {
-      const gear = character.gearSets.filter(s => s.bossId === 612 || s.bossId === 709).sort((a, b) => b.date - a.date)[0];
+      const gear = character.gearSets.filter(s => s.bossId === 612 || s.bossId === 712).sort((a, b) => b.date - a.date)[0];
 
       character.lastUpdated = gear.date;
       character.gear = gear.items;
@@ -100,8 +100,8 @@ module.exports = {
         'class': character.class
       };
 
-      // Get last set from BWL Broodlord (612) or AQ Skeram (709)
-      const gearSet = character.gearSets.filter(s => s.bossId === 612 || s.bossId === 709).sort((a, b) => b.date - a.date)[0];
+      // Get last set from BWL Broodlord (612) or AQ Fankriss (712)
+      const gearSet = character.gearSets.filter(s => s.bossId === 612 || s.bossId === 712).sort((a, b) => b.date - a.date)[0];
 
       for (const slot of slots) {
         const item = gearSet.items[slot];
