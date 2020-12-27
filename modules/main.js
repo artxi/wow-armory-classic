@@ -5,6 +5,8 @@ const Character = require('./character');
 const Database = require('./database');
 const Utils = require('./utils');
 
+const validBossesForCsv = [1111, 1115, 1116];
+
 module.exports = {
 
   /**
@@ -55,7 +57,7 @@ module.exports = {
     });
 
     for (const character of guildCharacters) {
-      const gear = character.gearSets.filter(s => s.bossId === 612 || s.bossId === 712).sort((a, b) => b.date - a.date)[0];
+      const gear = character.gearSets.filter(s => validBossesForCsv.includes(s.bossId)).sort((a, b) => b.date - a.date)[0];
 
       character.lastUpdated = gear.date;
       character.gear = gear.items;
@@ -100,8 +102,7 @@ module.exports = {
         'class': character.class
       };
 
-      // Get last set from BWL Broodlord (612) or AQ Fankriss (712)
-      const gearSet = character.gearSets.filter(s => s.bossId === 612 || s.bossId === 712).sort((a, b) => b.date - a.date)[0];
+      const gearSet = character.gearSets.filter(s => S.includes(s.bossId)).sort((a, b) => b.date - a.date)[0];
 
       for (const slot of slots) {
         const item = gearSet.items[slot];
