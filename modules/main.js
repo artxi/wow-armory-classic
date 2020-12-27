@@ -102,7 +102,11 @@ module.exports = {
         'class': character.class
       };
 
-      const gearSet = character.gearSets.filter(s => S.includes(s.bossId)).sort((a, b) => b.date - a.date)[0];
+      const gearSet = character.gearSets.filter(s => validBossesForCsv.includes(s.bossId)).sort((a, b) => b.date - a.date)[0];
+
+      if (!gearSet) {
+        continue;
+      }
 
       for (const slot of slots) {
         const item = gearSet.items[slot];
