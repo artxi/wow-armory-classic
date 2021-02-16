@@ -5,7 +5,7 @@ const Character = require('./character');
 const Database = require('./database');
 const Utils = require('./utils');
 
-const validBossesForCsv = [1111, 1115, 1116];
+const validBossesForCsv = [1107];
 
 module.exports = {
 
